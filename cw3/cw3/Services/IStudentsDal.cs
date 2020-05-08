@@ -9,6 +9,9 @@ namespace cw3.Services
     public interface IStudentsDal
     {
         public IEnumerable<Student> GetStudents();
+        public IEnumerable<Student> GetStudents(string indexNumber);
+
+        
         
     }
 }

@@ -28,7 +28,13 @@ namespace cw3.Controllers
             //return Ok(_dbService.GetStudents());
             return Ok(_dbService.GetStudents());
         }
-        
+
+        [HttpGet("{indexNumber}")]
+        public IActionResult GetStudent(string indexNumber)
+        {
+            return Ok(_dbService.GetStudents(indexNumber));
+        }
+
 
     }
 }

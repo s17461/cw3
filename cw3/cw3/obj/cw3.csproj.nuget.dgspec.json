@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gabri\\Desktop\\APBD\\cwiczenia 3\\cw3\\cw3\\cw3\\cw3.csproj": {}
+    "C:\\Users\\gabri\\Documents\\PJATK1\\APBD\\GitHub\\cw3\\cw3\\cw3\\cw3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gabri\\Desktop\\APBD\\cwiczenia 3\\cw3\\cw3\\cw3\\cw3.csproj": {
+    "C:\\Users\\gabri\\Documents\\PJATK1\\APBD\\GitHub\\cw3\\cw3\\cw3\\cw3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabri\\Desktop\\APBD\\cwiczenia 3\\cw3\\cw3\\cw3\\cw3.csproj",
+        "projectUniqueName": "C:\\Users\\gabri\\Documents\\PJATK1\\APBD\\GitHub\\cw3\\cw3\\cw3\\cw3.csproj",
         "projectName": "cw3",
-        "projectPath": "C:\\Users\\gabri\\Desktop\\APBD\\cwiczenia 3\\cw3\\cw3\\cw3\\cw3.csproj",
+        "projectPath": "C:\\Users\\gabri\\Documents\\PJATK1\\APBD\\GitHub\\cw3\\cw3\\cw3\\cw3.csproj",
         "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabri\\Desktop\\APBD\\cwiczenia 3\\cw3\\cw3\\cw3\\obj\\",
+        "outputPath": "C:\\Users\\gabri\\Documents\\PJATK1\\APBD\\GitHub\\cw3\\cw3\\cw3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -41,6 +41,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[3.1.1, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.1, )"
             }
           },
           "imports": [

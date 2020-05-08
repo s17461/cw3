@@ -1,8 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Data.SqlTypes;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using cw3.Models;
+using cw3.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace cw3.Controllers
@@ -11,34 +15,20 @@ namespace cw3.Controllers
     [Route("api/students")]
     public class StudentsController : ControllerBase
     {
+
+        private IStudentsDal _dbService;
+        public StudentsController(IStudentsDal dbService)
+        {
+            _dbService = dbService;
+        }
+
         [HttpGet]
-        public string GetStudent(string orderBy)
+        public IActionResult GetStudents(string orderBy)
         {
-            /*
-             if(id == 1)
-            {
-                return Ok("Kowalski");
-            } else if (id == 2)
-            {
-                return Ok("Malewski");
-            }
-            return NotFound("Nie znaleziono studenta");
-            */
-
-            return $"Kowalski, Malewski, Andrzejewski sortowanie={orderBy}";
+            //return Ok(_dbService.GetStudents());
+            return Ok(_dbService.GetStudents());
         }
-
-        [HttpPost]
-        public IActionResult CreateStudent(Student student)
-        {
-
-            //... add to database
-            //... generic index number
-            
-            student.IndexNumber = $"s{new Random().Next(1, 20000)}";
-            return Ok(student);
-        }
-
+        
 
     }
 }
